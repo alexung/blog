@@ -1,0 +1,30 @@
+<div id="entry-form-container">
+  <%= form_for :entry, url: {action: "update"}, method: :patch do |f| %>
+
+  <div>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </div>
+
+  <div>
+    <%= f.label :author %>
+    <%= f.text_field :author %>
+  </div>
+
+  <div>
+    <%= f.label :body %>
+    <%= f.text_field :body %>
+  </div>
+
+  <div>
+    <%= f.label :tags %>
+    <%= f.text_field :tags %>
+  </div>
+
+  <div>
+    <%= f.submit "Submit Your Entry" %>
+  </div>
+
+  <% end %>
+
+</div>

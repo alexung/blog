@@ -1,0 +1,7 @@
+<h1>Entries</h1>
+
+<% @entries.each do |entry| %>
+<a href="/entries/<%=entry.id%>"><%= entry.title %></a><br>
+<% end %><br><br>
+
+<%= link_to 'Spill your thoughts', new_entry_path %>
